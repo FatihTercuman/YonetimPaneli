@@ -1,7 +1,7 @@
 <Solution>
-  <Project Path="Business/Business.csproj" />
-  <Project Path="Core/Core.csproj" />
-  <Project Path="Data/Data.csproj" />
-  <Project Path="UI/UI.csproj" />
-  <Project Path="Utils/Utils.csproj" />
+  <Project Path="Business/Business.csproj" Id="819f7e29-dd57-4ed9-ac8d-f944e93fe835" />
+  <Project Path="Core/Core.csproj" Id="20f5a932-e62c-41cf-8483-87c969a58d7a" />
+  <Project Path="Data/Data.csproj" Id="faf3bb2f-3a79-4b88-8581-568ba54c735a" />
+  <Project Path="UI/UI.csproj" Id="903477b3-5117-4fb0-926d-33d6a0952f18" />
+  <Project Path="Utils/Utils.csproj" Id="8ce71413-f274-4a01-8df4-61c6de82f96e" />
 </Solution>
