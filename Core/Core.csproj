@@ -55,8 +55,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\Bases\BaseEntity.cs" />
+    <Compile Include="Abstract\IRepositories\IPostRepository.cs" />
+    <Compile Include="Abstract\IServices\IPostService.cs" />
+    <Compile Include="Abstract\IUnitOfWork.cs" />
+    <Compile Include="Concrete\DTTOs\NewPostDto.cs" />
+    <Compile Include="Concrete\DTTOs\PostDetailDto.cs" />
+    <Compile Include="Concrete\DTTOs\PostListItemDto.cs" />
+    <Compile Include="Concrete\DTTOs\UpdatePostDto.cs" />
     <Compile Include="Concrete\Entities\ApplicationUser.cs" />
-    <Compile Include="Concrete\Entities\Member.cs" />
+    <Compile Include="Concrete\Entities\Post.cs" />
+    <Compile Include="Concrete\Entities\Tag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,5 +77,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
