@@ -67,9 +67,29 @@ namespace Business.Services
             return null;
         }
 
-        public IEnumerable<PostListItemDto>GetPostList()
+        public UpdatePostDto GetPostEdit(int id)
         {
-            var posts = unitOfWork.PostRepository.ReadMany(null,"Tags","Author");
+            var post = unitOfWork.PostRepository.ReadById(id);
+            if (post != null)
+            {
+                return new UpdatePostDto
+                {
+                    Id = post.Id,
+                    Title = post.Title,
+                    Content = post.Content,
+                    AuthorId = post.AuthorId,
+                    CoverImageUrl = post.CoverImageUrl,
+                    IsDraft = !post.Active
+                };
+            }
+            return null;
+        }
+
+       
+
+        public IEnumerable<PostListItemDto> GetPostList(string autherId)
+        {
+            var posts = unitOfWork.PostRepository.ReadMany(x => x.AuthorId == autherId, "Tags", "Author");
             return from post in posts
                    select new PostListItemDto
                    {
@@ -77,11 +97,10 @@ namespace Business.Services
                        Title = post.Title,
                        ShortContent = post.Content,
                        AuthorId = post.AuthorId,
-                       AutherName = $"{post.Author.FirstName}{post.Author.LastName}",
+                       AutherName = $"{post.Author.FirstName} {post.Author.LastName}",
                        CoverImageUrl = post.CoverImageUrl,
                        PublishDate = post.PublishDate,
-                       Tags = post.Tags.Select(x => x.Name).ToArray(),
-
+                       Tags = post.Tags.Select(x => x.Name).ToArray()
                    };
         }
 

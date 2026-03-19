@@ -58,17 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\ApplicationDbContext.cs" />
-    <Compile Include="Migrations\202603161035115_InitialCreate.cs" />
-    <Compile Include="Migrations\202603161035115_InitialCreate.Designer.cs">
-      <DependentUpon>202603161035115_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202603170733326_update01.cs" />
-    <Compile Include="Migrations\202603170733326_update01.Designer.cs">
-      <DependentUpon>202603170733326_update01.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202603171123281_update02.cs" />
-    <Compile Include="Migrations\202603171123281_update02.Designer.cs">
-      <DependentUpon>202603171123281_update02.cs</DependentUpon>
+    <Compile Include="Migrations\202603190953545_init.cs" />
+    <Compile Include="Migrations\202603190953545_init.Designer.cs">
+      <DependentUpon>202603190953545_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,14 +83,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202603161035115_InitialCreate.resx">
-      <DependentUpon>202603161035115_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202603170733326_update01.resx">
-      <DependentUpon>202603170733326_update01.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202603171123281_update02.resx">
-      <DependentUpon>202603171123281_update02.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202603190953545_init.resx">
+      <DependentUpon>202603190953545_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
