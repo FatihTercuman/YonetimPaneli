@@ -55,15 +55,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\Bases\BaseEntity.cs" />
+    <Compile Include="Abstract\IRepositories\ICategoryRepository.cs" />
     <Compile Include="Abstract\IRepositories\IPostRepository.cs" />
+    <Compile Include="Abstract\IRepositories\IProjectRepository.cs" />
     <Compile Include="Abstract\IServices\IPostService.cs" />
+    <Compile Include="Abstract\IServices\IProjectServices.cs" />
     <Compile Include="Abstract\IUnitOfWork.cs" />
+    <Compile Include="Concrete\DTTOs\CategoryDto.cs" />
     <Compile Include="Concrete\DTTOs\NewPostDto.cs" />
+    <Compile Include="Concrete\DTTOs\NewProjectDto.cs" />
     <Compile Include="Concrete\DTTOs\PostDetailDto.cs" />
     <Compile Include="Concrete\DTTOs\PostListItemDto.cs" />
+    <Compile Include="Concrete\DTTOs\ProjectDto.cs" />
     <Compile Include="Concrete\DTTOs\UpdatePostDto.cs" />
     <Compile Include="Concrete\Entities\ApplicationUser.cs" />
+    <Compile Include="Concrete\Entities\Category.cs" />
     <Compile Include="Concrete\Entities\Post.cs" />
+    <Compile Include="Concrete\Entities\Project.cs" />
     <Compile Include="Concrete\Entities\Tag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
